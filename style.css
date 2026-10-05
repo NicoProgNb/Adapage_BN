@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 0;
+}
+
+:root {
+    --fond: rgba(208, 230, 152, 0.451);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background: var(--fond);
+    margin-bottom: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+}
