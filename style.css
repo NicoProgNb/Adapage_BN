@@ -125,6 +125,10 @@ section img {
     width: 10%;
 }
 
+#formation img {
+    width: 20%;
+}
+
 section p {
     margin-bottom: 5%;
     padding: 1%;
@@ -138,11 +142,6 @@ section a {
     text-decoration: none;
     color: var(--contour);
     font-weight: 700;
-}
-
-#qualite {
-    padding: 0;
-    margin-bottom: 5%;
 }
 
 aside {
@@ -187,6 +186,7 @@ aside p {
     grid-column: 2/3;
     border-left: 1px solid var(--contour) ;
     list-style-type: none;
+    white-space: nowrap;
 }
 
 /* FOOTER */
@@ -230,13 +230,16 @@ footer a {
     }
 
 /* Cartes */
-
-
+/*  */
+/* MODIFIER GRID DANS QUALITES */
+/*  */
 } 
 
 /* A partir de 1024px */
 /*                   */
 @media (min-width: 1024px) {
+
+/* Index */
 
     body {
         border: 4px solid var(--contour);
@@ -273,6 +276,8 @@ footer a {
 /*                   */
 @media (min-width: 1440px) {
 
+/* Index */
+
     #presentation div p:first-child {
         grid-area: 1/1/2/2;
     }
@@ -296,4 +301,20 @@ footer a {
     #presentation>p {
         margin-top: 5%;
     }
+
+/* Cartes */
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
 } 
